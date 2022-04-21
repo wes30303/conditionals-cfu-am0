@@ -21,26 +21,34 @@ numberDogs = 0
 puts "Is number_teachers greater than number_students?", number_teachers > number_students
 # this should print: "Is numberTeachers greater than numberStudents?" false
 
-# YOU DO: print the result of the comparison: is number_teachers less than number_students?
+# YOU DO: print the result of the comparison:
+
+puts "is number_teachers less than number_students?", number_teachers < number_students
 # this should print: true
 
-# YOU DO: print the result of the comparison: is number_teachers equal to string_teachers?
+
+# YOU DO: print the result of the comparison:
+puts "is number_teachers equal to string_teachers?", number_teachers = number_students
 # this should print: false
 
 # YOU DO: print the result of the comparison: is number_teachers not equal to number_students?
 # this should print: true
+puts number_teachers != number_students
 
 # YOU DO: print the result of the comparison: is number_students greater than or equal to 20?
 # this should print: true
+puts number_students >= 20
 
 # YOU DO: print the result of the comparison: is number_students greater than or equal to 21?
 # this should print: false
-
+puts  number_students >= 21
 # YOU DO: print the result of the comparison: is number_students less than or equal to 20?
 # this should print: true
-
+puts number_students <= 20
 # YOU DO: print the result of the comparison: is number_students less than or equal to 21?
 # this should print: true
+
+puts number_students <= 21
 
 
 #-------------------
@@ -53,21 +61,24 @@ puts "Is number_teachers greater than number_students?", number_teachers > numbe
 # Make sure YOU can explain it that way!
 
 puts 4 < 9
-#YOU DO: Explain.
+#This will check if 4 is less then 9 and since this is true it will come out true.
 
 books = 3
 puts 4 < books
-# YOU DO: Explain.
+# Bookes is given the variables of 3 and in line 2 it is asking 4 is less than book (3)
+#this is false since books is given the value of 3
 
 friends = 6
 siblings = 2
 puts friends > siblings
-# YOU DO: Explain.
+# They both have value frined has 6 and siblings has 2 line 3
+# is asking if 6 is grater than 2 and will be true
 
 attendees = 9;
 meals = 8;
 puts attendees != meals
-# YOU DO: Explain.
+# attendees is given 9 and meals is given 8 what it is asking in line
+#3 is 9 is not = to 8 and this will also be true
 
 
 #-------------------
@@ -90,15 +101,21 @@ age = 1
 
 # YOU DO:
 # Determine if the dog loves to play and loves treats
-
+loves_to_play && loves_treats
 
 # Determine if the dog loves to play and loves the dog park
-
+loves_to_play && loves_dog_park
 
 # Determine if the dog loves to play or loves the dog park
-
-
+loves_to_play || loves_dog_park
+puts "  this is my life"
 # Determine if the dog loves to play and is a puppy
+if loves_to_play == true &&  age <= 1
+  print "true"
+else
+  print "false"
+end
 
 # What did your final line of code evaluate to? Why do you think that is? Explain.
-# ANSWER:
+# ANSWER: What i did for here is i did loves to play && loves to play and is < than 1
+print "I dont know if i did too much but this works "
